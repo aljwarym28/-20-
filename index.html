@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البريق</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Login Button -->
+    <div class="login-container">
+        <a href="#" class="login-btn">
+            <i class="fas fa-user-circle"></i>
+            <span>تسجيل الدخول</span>
+        </a>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>القائمة</h3>
+            <button class="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#home" class="sidebar-link active">
+                <i class="fas fa-home"></i>
+                <span>الرئيسية</span>
+            </a>
+            <a href="#products" class="sidebar-link">
+                <i class="fas fa-box"></i>
+                <span>المنتجات</span>
+            </a>
+            <a href="#contact" class="sidebar-link">
+                <i class="fas fa-envelope"></i>
+                <span>تواصل معنا</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Sidebar Toggle Button -->
+    <button class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+            <div class="digital-icon icon-1">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="digital-icon icon-2">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="digital-icon icon-3">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="digital-icon icon-4">
+                <i class="fas fa-coins"></i>
+            </div>
+            <div class="digital-icon icon-5">
+                <i class="fas fa-book-open"></i>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>اكتشف عالماً من المنتجات الرقمية المميزة</h1>
+                <p>نقدم لك أفضل المنتجات الرقمية بجودة عالية وأسعار منافسة</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">تصفح المنتجات</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">منتجاتنا المميزة</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="checkout.html" class="product-link">
+                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600" alt="استراتيجية التداول">
+                        </a>
+                        <div class="product-overlay">
+                            <a href="checkout.html" class="btn btn-buy"><i class="fas fa-cart-shopping"></i> شراء</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">استراتيجيات تداول</span>
+                        <h3>استراتيجية المليون</h3>
+                        <p class="product-description">أقوى استراتيجية تداول في الشرق الأوسط</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="checkout2.html" class="product-link">
+                            <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=600" alt="كورس تعلم التداول">
+                        </a>
+                        <div class="product-overlay">
+                            <a href="checkout2.html" class="btn btn-buy"><i class="fas fa-cart-shopping"></i> شراء</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">دورات تدريبية</span>
+                        <h3>كورس تعلم التداول من الصفر حتى الاحتراف</h3>
+                        <p class="product-description">دورة شاملة لتعلم التداول من الأساسيات حتى الاحتراف</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$150</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope-circle-check"></i>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <p><a href="mailto:aljwarym28@gmail.com">aljwarym28@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-volume"></i>
+                        <div>
+                            <h4>رقم الهاتف</h4>
+                            <p><a href="tel:+9647815576089">+964 781 557 6089</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>واتساب</h4>
+                            <p><a href="https://wa.me/9647815576089" target="_blank">+964 781 557 6089</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- سيتم تحميل الفوتر تلقائياً -->
+
+    <script src="script.js"></script>
+    <script src="load-components.js"></script>
+</body>
+</html>
