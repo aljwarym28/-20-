@@ -1,20 +1,30 @@
 
-// ===== Mobile Menu Toggle =====
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-const navLinks = document.querySelectorAll('.nav-link');
+// ===== Sidebar Menu Toggle =====
+const sidebarToggle = document.querySelector('.sidebar-toggle');
+const sidebar = document.querySelector('.sidebar');
+const closeSidebar = document.querySelector('.close-sidebar');
+const sidebarLinks = document.querySelectorAll('.sidebar-link');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
+sidebarToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a nav link
-navLinks.forEach(link => {
+closeSidebar.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+});
+
+// Close sidebar when clicking on a sidebar link
+sidebarLinks.forEach(link => {
     link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
+        sidebar.classList.remove('active');
     });
+});
+
+// Close sidebar when clicking outside
+document.addEventListener('click', (e) => {
+    if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target)) {
+        sidebar.classList.remove('active');
+    }
 });
 
 // ===== Smooth Scroll =====
